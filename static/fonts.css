@@ -1,0 +1,47 @@
+@font-face {
+    font-family: Mirador;
+    src: url('https://cdn.medifind.com/fonts/mirador-bold-webfont.woff2') format('woff2'), url('https://cdn.medifind.com/fonts/mirador-bold-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nunito Sans';
+    src: url('https://cdn.medifind.com/fonts/nunitosans-light-webfont.woff2') format('woff2'), url('https://cdn.medifind.com/fonts/nunitosans-light-webfont.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nunito Sans';
+    src: url('https://cdn.medifind.com/fonts/nunitosans-semibold-webfont.woff2') format('woff2'), url('https://cdn.medifind.com/fonts/nunitosans-semibold-webfont.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nunito Sans';
+    src: url('https://cdn.medifind.com/fonts/nunitosans-extrabold-webfont.woff2') format('woff2'), url('https://cdn.medifind.com/fonts/nunitosans-extrabold-webfont.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nunito Sans';
+    src: url('https://cdn.medifind.com/fonts/nunitosans-bold-webfont.woff2') format('woff2'), url('https://cdn.medifind.com/fonts/nunitosans-bold-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Nunito Sans';
+    src: url('https://cdn.medifind.com/fonts/nunitosans-regular-webfont.woff2') format('woff2'), url('https://cdn.medifind.com/fonts/nunitosans-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}

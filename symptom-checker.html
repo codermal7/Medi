@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en"><plasmo-csui id="merlinExt-merlinGUI"></plasmo-csui><merlin-component id="merlin-text-summarizer"
+    class="merlin text-summarizer"></merlin-component><plasmo-csui id="merlinExt-selectContextBtn"></plasmo-csui>
+
+<head>
+    <script async="" src="https://tags.srv.stackadapt.com/events.js"></script>
+    <script type="text/javascript" async="" src="https://snap.licdn.com/li.lms-analytics/insight.min.js"></script>
+    <script type="text/javascript" async=""
+        src="https://www.googletagmanager.com/gtag/js?id=G-1LGMJEF13J&amp;l=MediFind_Data_Layer&amp;cx=c"></script>
+    <script async="" src="https://static.mailerlite.com/js/universal.js?v1680853"></script>
+    <script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script>
+    <script async=""
+        src="https://www.googletagmanager.com/gtm.js?id=GTM-M337G6P&amp;l=MediFind_Data_Layer&amp;gtm_auth=RNA1RHcpIAIfTlA65be02A&amp;gtm_preview=env-1&amp;gtm_cookies_win=x"></script>
+    <script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js', });
+            var f = d.getElementsByTagName(s)[0], j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true; j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl + '&gtm_auth=RNA1RHcpIAIfTlA65be02A&gtm_preview=env-1&gtm_cookies_win=x';
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'MediFind_Data_Layer', 'GTM-M337G6P');</script>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="preconnect" href="https://cdn.medifind.com">
+    <link rel="dns-prefetch" href="https://cdn.medifind.com">
+    <link rel="preconnect" href="https://www.googletagmanager.com">
+    <link rel="dns-prefetch" href="https://www.googletagmanager.com">
+    <link rel="icon" type="image/png" sizes="16x16" href="/static/favicons/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/static/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/static/favicons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/static/favicons/android-icon-192x192.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="/static/favicons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/static/favicons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/static/favicons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/static/favicons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/static/favicons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/static/favicons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/static/favicons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/static/favicons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/static/favicons/apple-icon-180x180.png">
+    <link rel="manifest" href="/static/favicons/manifest.json" crossorigin="use-credentials">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/static/favicons/ms-icon-144x144.png">
+    <link href="/static/css/main.b647f684.css" rel="stylesheet">
+    <link href="/static/css/6456.fad24dcf.chunk.css" rel="preload" as="style">
+    <link href="/static/css/5258.2e8c565f.chunk.css" rel="preload" as="style">
+    <link rel="stylesheet" type="text/css" href="/static/css/6456.fad24dcf.chunk.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/5258.2e8c565f.chunk.css">
+    <title>Symptom Checker | MediFind</title>
+    <link rel="canonical" href="https://www.medifind.com/symptom-checker" data-react-helmet="true">
+    <meta name="robots" content="index,follow,noarchive" data-react-helmet="true">
+    <meta name="googlebot" content="index,follow,noarchive" data-react-helmet="true">
+    <meta property="og:type" content="website" data-react-helmet="true">
+    <meta property="og:locale" content="en_US" data-react-helmet="true">
+    <meta property="og:site_name" content="MediFind" data-react-helmet="true">
+    <meta property="og:url" content="https://www.medifind.com/symptom-checker" data-react-helmet="true">
+    <script type="application/ld+json"
+        data-react-helmet="true">{"@context":"http://schema.org","@type":"Organization","url":"https://www.medifind.com","logo":"https://www.medifind.com/static/images/logo-128.png","description":"When it comes to your health, nothing is more valuable than time. Quickly find the best doctors, latest medical advances, and active clinical trials with MediFind. Our goal is to dramatically reduce the amount of time and frustration you spend finding the right healthcare, so you have the best possible chances at the best health outcomes.","name":"MediFind","foundingDate":"2020","sameAs":["https://www.facebook.com/medifindhealth/","https://www.instagram.com/medifindhealth","https://www.youtube.com/channel/UCbYmcsLXSFl0EkBdsTZ0nHQ","https://www.linkedin.com/company/medifind","https://www.twitter.com/medifindhealth"]}</script>
+    <meta name="description"
+        content="Searching for the cause of your medical symptoms? MediFind's powerful symptom checker tool helps you find a possible diagnosis."
+        data-react-helmet="true">
+    <meta property="og:title" content="Symptom Checker | MediFind" data-react-helmet="true">
+    <meta property="og:description"
+        content="Searching for the cause of your medical symptoms? MediFind's powerful symptom checker tool helps you find a possible diagnosis."
+        data-react-helmet="true">
+    <meta property="og:image" content="https://cdn.medifind.com/assets/help-journey-symptoms-big.png"
+        data-react-helmet="true">
+    <meta property="og:image:width" content="416" data-react-helmet="true">
+    <meta property="og:image:height" content="416" data-react-helmet="true">
+    <meta http-equiv="origin-trial"
+        content="A727AcAeLCei/ZogJHBlJUS63SxP6AeIROo7qXrkjrxkoxBu0eSSmypAHmGYwk4HjBMQp5nxCFODzfVnUIe31AQAAAB7eyJvcmlnaW4iOiJodHRwczovL3d3dy5nb29nbGV0YWdtYW5hZ2VyLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjg4MDgzMTk5LCJpc1RoaXJkUGFydHkiOnRydWV9">
+    <meta http-equiv="origin-trial"
+        content="A727AcAeLCei/ZogJHBlJUS63SxP6AeIROo7qXrkjrxkoxBu0eSSmypAHmGYwk4HjBMQp5nxCFODzfVnUIe31AQAAAB7eyJvcmlnaW4iOiJodHRwczovL3d3dy5nb29nbGV0YWdtYW5hZ2VyLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjg4MDgzMTk5LCJpc1RoaXJkUGFydHkiOnRydWV9">
+    <script attributionsrc="" type="text/javascript" async=""
+        src="https://www.googleadservices.com/pagead/conversion/649775612/?random=1680853628464&amp;cv=11&amp;fst=1680853628464&amp;bg=ffffff&amp;guid=ON&amp;async=1&amp;gtm=45He3430&amp;gcs=G111&amp;gcd=G111&amp;u_w=1280&amp;u_h=720&amp;url=https%3A%2F%2Fwww.medifind.com%2Fsymptom-checker&amp;label=hbiVCN3nrc4BEPyT67UC&amp;hn=www.googleadservices.com&amp;frm=0&amp;tiba=Symptom%20Checker%20%7C%20MediFind&amp;value=0&amp;bttype=purchase&amp;auid=635848206.1680853364&amp;uaa=x86&amp;uab=64&amp;uafvl=Google%2520Chrome%3B111.0.5563.148%7CNot(A%253ABrand%3B8.0.0.0%7CChromium%3B111.0.5563.148&amp;uamb=0&amp;uap=Windows&amp;uapv=14.0.0&amp;uaw=0&amp;data=ads_data_redaction%3Dfalse&amp;rfmt=3&amp;fmt=4"></script>
+    <script type="text/javascript" async=""
+        src="https://googleads.g.doubleclick.net/pagead/viewthroughconversion/649775612/?random=1680853628471&amp;cv=11&amp;fst=1680853628471&amp;bg=ffffff&amp;guid=ON&amp;async=1&amp;gtm=45He3430&amp;u_w=1280&amp;u_h=720&amp;url=https%3A%2F%2Fwww.medifind.com%2Fsymptom-checker&amp;hn=www.googleadservices.com&amp;frm=0&amp;tiba=Symptom%20Checker%20%7C%20MediFind&amp;auid=635848206.1680853364&amp;uaa=x86&amp;uab=64&amp;uafvl=Google%2520Chrome%3B111.0.5563.148%7CNot(A%253ABrand%3B8.0.0.0%7CChromium%3B111.0.5563.148&amp;uamb=0&amp;uap=Windows&amp;uapv=14.0.0&amp;uaw=0&amp;rfmt=3&amp;fmt=4"></script>
+    <script src="https://cdn.outfunnel.com/c.js?v=2023-04-07"></script>
+    <link rel="stylesheet" type="text/css" href="/static/css/9355.a60216f4.chunk.css">
+    <link rel="stylesheet" type="text/css" href="https://static.mailerlite.com/css/universal.css?v4" media="all">
+    <script type="text/javascript" async=""
+        src="https://static.mailerlite.com/data/a/2010/2010460/universal/i8r0u4g0h2_popups.js?v=1680853628"></script>
+    <link id="sa-css" rel="stylesheet" type="text/css" href="https://tags.srv.stackadapt.com/sa.css" media="all">
+    <link rel="stylesheet" type="text/css" href="/static/css/2382.3640111c.chunk.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/4668.cb8d4b3f.chunk.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/9617.bdcb46fd.chunk.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/4214.db0a2154.chunk.css">
+    <link rel="stylesheet" type="text/css" href="/static/css/2625.51c5f924.chunk.css">
+    <script type="application/ld+json"
+        data-react-helmet="true">{"@context":"http://schema.org/","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"What is a symptom checker?","acceptedAnswer":{"@type":"Answer","text":"A symptom checker is a tool that allows users to enter symptoms, as well as other medical and demographic information, to get a list of possible medical conditions. Symptom checkers can be used as a starting point to get a medical diagnosis from a doctor. Whether you have a sore throat, an itch, a bad case of sneezes, abdominal pain, or fatigue, you can enter these common symptoms to explore their potential causes."}},{"@type":"Question","name":"How does the symptom checker work?","acceptedAnswer":{"@type":"Answer","text":"While it's not a substitute for professional medical advice, you can get a better idea of what might be causing that sore throat or abdominal pain. Our symptom checker utilizes sophisticated natural language processing software that is applied to a medical database of disease information consisting of thousands of different health conditions. You'll be asked to enter your symptoms using everyday language and answer a few basic questions about your health, age, sex, and location. The combination of symptoms and health information is analyzed by an enhanced machine learning model that produces a list of possible matching conditions, such as the flu or many other ailments. You can then research those conditions and locate doctors to help diagnose and treat them."}},{"@type":"Question","name":"Should I trust the results from a symptom checker?","acceptedAnswer":{"@type":"Answer","text":"Symptom checkers are used by doctors and medical group members in hospitals around the world to help diagnose patients with ailments, such as COVID-19, the flu, or even a severe menstrual period. Our tool is widely recognized in the medical community as one of the most accurate on the market and has been professionally validated over many years with several peer-reviewed articles appearing in medical journals."}},{"@type":"Question","name":"Do I still need to see a doctor after using a symptom checker?","acceptedAnswer":{"@type":"Answer","text":"A symptom checker is not a substitute for seeing a doctor. It is a tool to help gather information and determine what type of doctor to see in order to have a more productive visit with the goal of getting the correct diagnosis sooner. Whether that's intense cramps from a menstrual period or a case of COVID-19, our symptom checking tool can help. One study reported that for people living with a rare disease, it takes an average of nearly 5 years between onset of symptoms and correct diagnosis. In that time, they see an average of over 7 physicians each. And over half of patients agreed with the statement, “Because of a slow diagnosis, treatment was delayed and the impact on my condition has been negative.” MediFind aims to speed up the process of finding the correct diagnosis with the help of your physician."}},{"@type":"Question","name":"Why does the symptom checker display numerous conditions in the results?","acceptedAnswer":{"@type":"Answer","text":"There are very few symptoms that indicate just one condition and most symptoms have many potential causes. It is not possible, even with sophisticated technology, to narrow down the list of conditions to one or two. A symptom checker is designed to allow patients to research possible conditions in order to be prepared when consulting with a doctor. Whether you're researching symptoms across a specific body area or you want to know more about the differences between a coronavirus and the flu, the symptom tool may show multiple results."}},{"@type":"Question","name":"Is the first condition in the list the most likely one?","acceptedAnswer":{"@type":"Answer","text":"Say you get results that list COVID-19, the flu, and a cold. Does this mean you're more likely to have COVID-19 over the flu? No. The order of the condition results is sorted by relevance or word match and does NOT indicate the degree of clinical likelihood. Please review all the conditions rather than focusing on just the first condition."}},{"@type":"Question","name":"What are Red Flag Conditions?","acceptedAnswer":{"@type":"Answer","text":"Red Flag conditions have the potential to be very serious and should be treated by a medical professional. If your symptoms are severe and have developed quickly you should consider visiting an Emergency Room."}}]}</script>
+</head>
+
+<body cz-shortcut-listen="true"><noscript>
+        <iframe
+            src="https://www.googletagmanager.com/ns.html?id=GTM-M337G6P&gtm_auth=RNA1RHcpIAIfTlA65be02A&gtm_preview=env-1&gtm_cookies_win=x"
+            height="0" width="0" style="display:none;visibility:hidden" id="tag-manager"></iframe></noscript>
+    <link href="/static/fonts.css" rel="stylesheet" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>Javascript is the best, please turn it on</noscript>
+    <div id="mf-root">
+        <div class="page page--symptom-checker">
+            <div class="Header_header-container__i-si9">
+                <header class="Header_header__Mw-YK">
+                    <nav aria-label="Primary" class="Header_header-nav__glu9m">
+                        <div class="Header_logo-container__eEl4H"><a aria-label="Home" href="/"><svg
+                                    xmlns="http://www.w3.org/2000/svg" viewBox="0 0 474.5 100.9"
+                                    class="Header_logo__Ln+XZ">
+                                    <path fill="#112053" stroke="#112053"
+                                        d="M13.1 70.9a40.6 40.6 0 0 1 0-58 41.9 41.9 0 0 1 58.6.1 40.6 40.6 0 0 1 0 57.9L44.2 98a2.5 2.5 0 0 1-3.5 0L13 70.9Z">
+                                    </path>
+                                    <path fill="#ebebeb"
+                                        d="M33.9 41h-3V20c0-1.6 1.3-2.8 2.9-2.8h17.6a2.8 2.8 0 0 1 2.8 2.8v7h-3v-7H33.9v21Z">
+                                    </path>
+                                    <path fill="#ebebeb" d="M32.2 44a3.6 3.6 0 1 0 0-7.2 3.6 3.6 0 0 0 0 7.2Z"></path>
+                                    <path fill="#91A6FF"
+                                        d="M51.4 69.5H33.8a2.8 2.8 0 0 1-2.9-2.8v-7.1h3v7.1h17.5l-.1-21h2.9v21c0 1.6-1.3 2.8-2.8 2.8Z">
+                                    </path>
+                                    <path fill="#91A6FF" d="M52.7 49.3a3.6 3.6 0 1 0 0-7.2 3.6 3.6 0 0 0 0 7.2Z"></path>
+                                    <path fill="#4062bb"
+                                        d="M66 55h-7.2v-3H66l-.2-17.5-21 .2v-3H66a2.8 2.8 0 0 1 2.8 2.8v17.6c0 1.6-1.3 2.9-2.8 2.9Z">
+                                    </path>
+                                    <path fill="#4062bb" d="M44.9 36.8a3.6 3.6 0 1 0 0-7.2 3.6 3.6 0 0 0 0 7.2Z"></path>
+                                    <path fill="#E94156"
+                                        d="M40.3 54.4H19.2a2.8 2.8 0 0 1-2.8-2.8V34c0-1.6 1.2-2.9 2.8-2.9h7.1v3h-7.1v17.5l21-.1v3Z">
+                                    </path>
+                                    <path fill="#E94156" d="M40.3 57.1a3.6 3.6 0 1 0 0-7.2 3.6 3.6 0 0 0 0 7.2Z"></path>
+                                    <path fill="#4062bb"
+                                        d="M286.7 36.2a6.4 6.4 0 0 0 4.8-1.8 6.4 6.4 0 0 0 1.4-2.1 6.5 6.5 0 0 0 .5-2.6 6.7 6.7 0 0 0-2-4.6 6.7 6.7 0 0 0-4.7-1.9 6.7 6.7 0 0 0-6.7 6.5 6.4 6.4 0 0 0 6.7 6.5m11.6 40.6-4.4-3.3a2 2 0 0 1-.8-1.6V42.4a2 2 0 0 0-2-2h-15.7a.5.5 0 0 0-.5.5v.8a.5.5 0 0 0 .2.4l4.5 3.2a2 2 0 0 1 .8 1.7v24.9a2 2 0 0 1-.8 1.6l-4.5 3.3a.5.5 0 0 0-.2.4v.8a.5.5 0 0 0 .5.4H298a.5.5 0 0 0 .5-.4v-.8a.5.5 0 0 0-.2-.4zm-43.8-17.2c0 8.4-4 14.4-9.1 14.4-5.5 0-9-6.4-9-14.5s3.5-14.6 9-14.6c5.2 0 9.1 5.9 9.1 14.3v.4zm18 17.2-4.7-3.4a1.5 1.5 0 0 1-.6-1.3V21.8a1.5 1.5 0 0 0-.5-1 1.5 1.5 0 0 0-.5-.4 1.7 1.7 0 0 0-.6-.1h-16a.5.5 0 0 0-.5.3.5.5 0 0 0 0 .2v.5a.5.5 0 0 0 .2.4l4.6 3.6a1.5 1.5 0 0 1 .6 1.2v24.7a14.7 14.7 0 0 0-14.8-11.7c-9.9 0-16.9 7.6-16.9 20s7 20 17 20a14.7 14.7 0 0 0 9.4-3.2 14.8 14.8 0 0 0 5.3-8.6V77a1.5 1.5 0 0 0 1.5 1.5h16.1a.5.5 0 0 0 .4-.1.5.5 0 0 0 .1-.4v-.8a.6.6 0 0 0 0-.2.5.5 0 0 0-.1-.1zm-73-36c4.5 0 6.7 3.5 7.1 14.3a.5.5 0 0 1-.4.5h-14a.5.5 0 0 1-.4-.5c.4-9.8 2.9-14.4 7.7-14.4zm-7.2 18.6h25a1.5 1.5 0 0 0 1.1-.5 1.5 1.5 0 0 0 .4-1.1c-.6-11.4-8-18.3-19.3-18.3-11.8 0-21.3 8-21.3 20 0 11.8 9.6 20 21.5 20 8.9 0 15.4-4.8 18.5-13.4a.3.3 0 0 0-.1-.3.3.3 0 0 0-.1 0l-.6-.3a.3.3 0 0 0-.4.1c-3 5.2-7 7.2-11.8 7.2-7.8 0-12.7-6.2-13.4-12.9a.5.5 0 0 1 .3-.5.4.4 0 0 1 .2 0zm-19.2-34.3 4.3-3.1a.5.5 0 0 0 .2-.4v-.8a.5.5 0 0 0-.5-.5H162a.5.5 0 0 0-.4.3l-1.9 3.4L148 45.8a.5.5 0 0 1-.9 0l-14.7-25.3a.5.5 0 0 0-.4-.2h-17a.5.5 0 0 0-.5.5v.8a.5.5 0 0 0 .2.4l3.3 2.7a2 2 0 0 1 .7 1.6v46.5a2 2 0 0 1-.8 1.6l-3.2 2.4a.5.5 0 0 0-.2.4v.8a.5.5 0 0 0 .5.4h11.4a.5.5 0 0 0 .5-.4v-.8a.5.5 0 0 0-.2-.4l-3.4-2.5a2 2 0 0 1-.8-1.6V32a.5.5 0 0 1 1-.2l16.2 28.4a.5.5 0 0 0 .5.2h4a.5.5 0 0 0 .3-.2l15-27.6V72a2 2 0 0 1-.9 1.6l-4.3 3.2a.5.5 0 0 0-.2.4v.7a.5.5 0 0 0 .4.5h22.7a.5.5 0 0 0 .5-.4v-.8a.5.5 0 0 0-.2-.4l-4.3-3.2a2 2 0 0 1-.6-.7 2 2 0 0 1-.3-1V26.8a2 2 0 0 1 .3-.9 2 2 0 0 1 .6-.7z">
+                                    </path>
+                                    <path fill="#242a45"
+                                        d="m369.5 76.8-4.5-3.3a2 2 0 0 1-.8-1.6V42.4a2 2 0 0 0-2-2h-15.6a.5.5 0 0 0-.5.5v.8a.5.5 0 0 0 .2.4l4.5 3.2a2 2 0 0 1 .8 1.7v24.9a2 2 0 0 1-.8 1.6l-4.4 3.3a.5.5 0 0 0-.2.4v.8a.5.5 0 0 0 .4.4h22.6a.5.5 0 0 0 .5-.4v-.8a.5.5 0 0 0-.2-.4zM343 20.3h-41.3a.5.5 0 0 0-.4.5v.8a.5.5 0 0 0 .2.3l4.4 3.2a2 2 0 0 1 .8 1.7v45.1a2 2 0 0 1-.2 1 2 2 0 0 1-.6.6l-4.4 3.3a.5.5 0 0 0-.2.2.4.4 0 0 0 0 .2v.8a.5.5 0 0 0 .5.4h26.1a.5.5 0 0 0 .5-.4v-.8a.5.5 0 0 0-.3-.4l-7.2-3.3a2 2 0 0 1-1.2-1.8V53.4a2 2 0 0 1 .6-1.4 2 2 0 0 1 1.4-.6h8.3a2 2 0 0 1 1.6.7l5 6.3a.5.5 0 0 0 .5.2h.9a.5.5 0 0 0 .4-.3.5.5 0 0 0 0-.2V40.9a.5.5 0 0 0-.2-.4.5.5 0 0 0-.2 0h-1a.5.5 0 0 0-.3.1l-5 6.2a2 2 0 0 1-1.6.8h-8.4a2 2 0 0 1-2-2V26a2 2 0 0 1 .6-1.4 2 2 0 0 1 1.4-.6h12.8a2 2 0 0 1 1.7 1l7 11.9a.5.5 0 0 0 .5.2h.8a.5.5 0 0 0 .5-.5V22.3c0-.3 0-.5-.2-.8a2.1 2.1 0 0 0-.4-.6 2 2 0 0 0-1.4-.6z">
+                                    </path>
+                                    <path fill="#4062bb"
+                                        d="M362.2 22.3a7.2 7.2 0 0 0-10 0 7.1 7.1 0 0 0 0 10.1l4.1 4.2a1.1 1.1 0 0 0 .8.3 1.1 1.1 0 0 0 .9-.3l4.2-4.2a7.1 7.1 0 0 0 0-10.1z">
+                                    </path>
+                                    <path fill="#242a45"
+                                        d="M453.4 59.6c0 8.4-4 14.4-9.1 14.4-5.5 0-9-6.4-9-14.5s3.5-14.6 9-14.6c5.2 0 9.1 5.9 9.1 14.3v.4zm18 17.2-4.6-3.3a2 2 0 0 1-.8-1.6V22.3a2 2 0 0 0-2-2h-15.6a.5.5 0 0 0-.5.5v.5a.5.5 0 0 0 .2.4l4.5 3.4a2 2 0 0 1 .8 1.6v21.4a.5.5 0 0 1-.1.3.5.5 0 0 1-.9 0 14.6 14.6 0 0 0-13.9-9c-9.9 0-16.9 7.7-16.9 20s7 20 17 20a14.7 14.7 0 0 0 8.3-2.3 14.6 14.6 0 0 0 5.5-6.6.5.5 0 0 1 1 .2v5.7a2 2 0 0 0 .6 1.4c.1.2.4.3.6.4l.8.2H471a.5.5 0 0 0 .5-.5v-.8a.5.5 0 0 0 0-.2l-.2-.1zm-50.6 0-4.5-3.3a2 2 0 0 1-.8-1.6V53.3c0-9.5-4.8-13.9-12-13.9-6.7 0-10.3 3.5-12.3 8.6a.5.5 0 0 1-.5.4.5.5 0 0 1-.4-.5v-5.5a2 2 0 0 0-2-2h-15.7a.5.5 0 0 0-.4.5v.8a.5.5 0 0 0 .2.4l4.5 3.2a2 2 0 0 1 .8 1.7v24.9a2 2 0 0 1-.8 1.6l-4.6 3.3a.5.5 0 0 0-.2.4v.7a.5.5 0 0 0 .3.5.5.5 0 0 0 .2 0h21.5a.5.5 0 0 0 .4-.5v-.8a.5.5 0 0 0 0-.2.5.5 0 0 0-.1-.1l-3.5-3.3a2 2 0 0 1-.7-1.5V55.7c0-5 2.5-9.7 7.1-9.7 3.7 0 5.6 2.6 5.6 7.7V72a2 2 0 0 1-.7 1.5l-3.5 3.3a.5.5 0 0 0-.2.3v.9a.5.5 0 0 0 .5.4h21.6a.5.5 0 0 0 .4-.4v-.8a.5.5 0 0 0-.2-.4z">
+                                    </path>
+                                </svg></a></div>
+                        <ul class="Header_right__UBgEE">
+                            <li class="Header_header-button__uVW1f"><button data-nosnippet="true"
+                                    class="Button_button__N67Gb Button_normal__4rQXo Button_transparent__mdXzp Button_background__IN7iJ Button_round__DTgHq"
+                                    id="toggle-profile" type="button"><span
+                                        class="Button_focus-container__IZDE4 Header_btn__oqJo1 Button_normal__4rQXo Button_transparent__mdXzp Button_background__IN7iJ Button_round__DTgHq"
+                                        tabindex="-1"><span class=""><svg width="26" height="26" viewBox="0 0 26 26"
+                                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M12.6703 24.3407C19.1157 24.3407 24.3407 19.1157 24.3407 12.6703C24.3407 6.22499 19.1157 1 12.6703 1C6.22499 1 1 6.22499 1 12.6703C1 19.1157 6.22499 24.3407 12.6703 24.3407Z"
+                                                    stroke="#4062BB" stroke-width="2" stroke-miterlimit="10"
+                                                    stroke-linecap="round" stroke-linejoin="round"></path>
+                                                <path
+                                                    d="M12.6704 13.6704C14.3273 13.6704 15.6704 12.3273 15.6704 10.6704C15.6704 9.01356 14.3273 7.67041 12.6704 7.67041C11.0136 7.67041 9.67041 9.01356 9.67041 10.6704C9.67041 12.3273 11.0136 13.6704 12.6704 13.6704Z"
+                                                    stroke="#4062BB" stroke-width="2" stroke-miterlimit="10"
+                                                    stroke-linecap="round" stroke-linejoin="round"></path>
+                                                <path
+                                                    d="M18.6704 18.6704C15.3524 16.0037 9.98838 16.0037 6.67041 18.6704"
+                                                    stroke="#4062BB" stroke-width="2" stroke-miterlimit="10"
+                                                    stroke-linecap="round" stroke-linejoin="round"></path>
+                                            </svg></span></span><span class="sr-only">Click to view your
+                                        profile</span></button></li>
+                            <li class="Header_header-button__uVW1f"><button data-nosnippet="true"
+                                    class="Button_button__N67Gb Button_normal__4rQXo Button_transparent__mdXzp Button_background__IN7iJ Button_round__DTgHq"
+                                    id="toggle-search" type="button"><span
+                                        class="Button_focus-container__IZDE4 Header_btn__oqJo1 Button_normal__4rQXo Button_transparent__mdXzp Button_background__IN7iJ Button_round__DTgHq"
+                                        tabindex="-1"><span class=""><svg width="22" height="22" viewBox="0 0 22 22"
+                                                fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#4062BB">
+                                                <path
+                                                    d="M10.1803 16.5C13.6402 16.5 16.445 13.6858 16.445 10.2143C16.445 6.7428 13.6402 3.92859 10.1803 3.92859C6.72031 3.92859 3.91547 6.7428 3.91547 10.2143C3.91547 13.6858 6.72031 16.5 10.1803 16.5Z"
+                                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                                </path>
+                                                <path d="M18.0113 18.0714L14.6048 14.6536" stroke-width="2"
+                                                    stroke-linecap="round" stroke-linejoin="round"></path>
+                                            </svg></span></span><span class="sr-only">Click to search for condition or
+                                        expert</span></button></li>
+                            <li class="Header_header-button__uVW1f"><button data-nosnippet="true"
+                                    class="Button_button__N67Gb Button_normal__4rQXo Button_transparent__mdXzp Button_background__IN7iJ Button_round__DTgHq"
+                                    id="main-menu-button" type="button"><span
+                                        class="Button_focus-container__IZDE4 Header_btn__oqJo1 Button_normal__4rQXo Button_transparent__mdXzp Button_background__IN7iJ Button_round__DTgHq"
+                                        tabindex="-1"><span class=""><svg width="20" height="12" viewBox="0 0 20 12"
+                                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <rect width="20" height="2" rx="1" fill="#4062BB"></rect>
+                                                <rect y="5" width="20" height="2" rx="1" fill="#4062BB"></rect>
+                                                <rect y="10" width="14" height="2" rx="1" fill="#4062BB"></rect>
+                                            </svg></span></span><span class="sr-only">Click to open main
+                                        menu</span></button></li>
+                        </ul>
+                    </nav>
+                </header>
+                <div class="Header_menu-overlay__nFctW">
+                    <div class="HeaderMenuShared_header-menu__JZFUb" aria-hidden="true" tabindex="-1"
+                        style="visibility: hidden;"></div>
+                    <div class="HeaderMenuShared_header-menu__JZFUb" aria-hidden="true" tabindex="-1"
+                        style="visibility: hidden;"></div>
+                    <div class="HeaderMenuShared_header-menu__JZFUb" aria-hidden="true" tabindex="-1"
+                        style="visibility: hidden;"></div>
+                </div>
+            </div>
+            <div style="min-height: 100vh; position: relative;">
+                <div id="cookie-banner" class="PopupShared_banner__J9i6C"
+                    style="font-size: 1rem; padding: 6px 3rem; position: fixed; bottom: 0px; left: 0px; right: 0px; min-height: 4rem; box-shadow: rgba(0, 0, 0, 0.15) 0px 1px 3px 2px; background: rgb(64, 98, 187); color: rgb(255, 255, 255); font-weight: 500; font-family: &quot;Nunito Sans&quot;, -apple-system, blinkmacsystemfont, &quot;Segoe UI&quot;, roboto, &quot;Helvetica Neue&quot;, arial, &quot;Noto Sans&quot;, sans-serif, &quot;Apple Color Emoji&quot;, &quot;Segoe UI Emoji&quot;, &quot;Segoe UI Symbol&quot;, &quot;Noto Color Emoji&quot;;">
+                    <div class="PopupShared_banner__title__wRThi">We use cookies to provide the services offered on our
+                        website, and to improve our user experience. To learn more see our <a
+                            style="color: #fff;text-decoration: underline;" href="/privacy">Privacy Policy</a>.</div>
+                    <div class="PopupShared_banner__cta__tzgc1"><button data-nosnippet="true"
+                            class="Button_button__N67Gb Button_thin__-qG11 Button_red__bfUai Button_underline__0iBQQ Button_round__DTgHq"
+                            id="accept-cookie-button" type="button"><span
+                                class="Button_focus-container__IZDE4 Button_thin__-qG11 Button_red__bfUai Button_underline__0iBQQ Button_padding__44w-w Button_round__DTgHq"
+                                tabindex="-1"
+                                style="background: rgb(247, 247, 247); color: rgb(64, 98, 187); padding: 0.5rem 1rem; text-align: center;"><span
+                                    class="Button_label__4FHaL Button_thin__-qG11">Accept Necessary</span></span><span
+                                class="sr-only"></span></button><button data-nosnippet="true"
+                            class="Button_button__N67Gb Button_thin__-qG11 Button_red__bfUai Button_underline__0iBQQ Button_round__DTgHq"
+                            id="accept-cookie-button" type="button"><span
+                                class="Button_focus-container__IZDE4 Button_thin__-qG11 Button_red__bfUai Button_underline__0iBQQ Button_padding__44w-w Button_round__DTgHq"
+                                tabindex="-1"
+                                style="background: rgb(233, 65, 86); padding: 0.5rem 1rem; text-align: center;"><span
+                                    class="Button_label__4FHaL Button_thin__-qG11">Accept All</span></span><span
+                                class="sr-only"></span></button></div><button data-nosnippet="true"
+                        class="Button_button__N67Gb PopupShared_banner__close__GOH9o Button_thin__-qG11 Button_transparent__mdXzp Button_outline__0pgla Button_round__DTgHq"
+                        id="modal-close" type="button"><span
+                            class="Button_focus-container__IZDE4 Button_thin__-qG11 Button_transparent__mdXzp Button_outline__0pgla Button_round__DTgHq"
+                            tabindex="-1"><span class=""><svg width="28" height="28" viewBox="0 0 15 14" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M7.48529 13C10.799 13 13.4853 10.3137 13.4853 7C13.4853 3.68629 10.799 1 7.48529 1C4.17158 1 1.48529 3.68629 1.48529 7C1.48529 10.3137 4.17158 13 7.48529 13Z"
+                                        stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                    </path>
+                                    <path d="M9.28506 5.19983L5.68506 8.79983" stroke="#fff" stroke-width="1.5"
+                                        stroke-linecap="round" stroke-linejoin="round"></path>
+                                    <path d="M5.68506 5.19983L9.28506 8.79983" stroke="#fff" stroke-width="1.5"
+                                        stroke-linecap="round" stroke-linejoin="round"></path>
+                                </svg></span></span><span class="sr-only"></span></button>
+                </div>
+                <div class="Splash_splash__64B01">
+                    <div class="Splash_splash-landing__xCi4Q row">
+                        <div
+                            class="Splash_legend-section__l1jSs col-lg-3 col-sm-12 col-12 order-lg-1 order-sm-4 order-4">
+                            <div class="Splash_title__5EOR1">MediFind can help you find better care, faster.</div>
+                            <ul class="Splash_list__Gc3DO">
+                                <li>
+                                    <div class="Splash_pin__KK3sP"><svg width="11" height="13" viewBox="0 0 11 13"
+                                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <defs>
+                                                <linearGradient id="paint1_linear" x1="11" y1="0" x2="-1.82069"
+                                                    y2="10.8483" gradientUnits="userSpaceOnUse">
+                                                    <stop stop-color="#d14664"></stop>
+                                                    <stop offset="1" stop-color="#e94156"></stop>
+                                                </linearGradient>
+                                                <linearGradient id="paint2_linear" x1="11" y1="0" x2="-1.82069"
+                                                    y2="10.8483" gradientUnits="userSpaceOnUse">
+                                                    <stop stop-color="#b94b72"></stop>
+                                                    <stop offset="1" stop-color="#d14664"></stop>
+                                                </linearGradient>
+                                                <linearGradient id="paint3_linear" x1="11" y1="0" x2="-1.82069"
+                                                    y2="10.8483" gradientUnits="userSpaceOnUse">
+                                                    <stop stop-color="#835692"></stop>
+                                                    <stop offset="1" stop-color="#A54F7E"></stop>
+                                                </linearGradient>
+                                                <linearGradient id="paint4_linear" x1="11" y1="0" x2="-1.82069"
+                                                    y2="10.8483" gradientUnits="userSpaceOnUse">
+                                                    <stop stop-color="#715a9c"></stop>
+                                                    <stop offset="1" stop-color="#89558e"></stop>
+                                                </linearGradient>
+                                                <linearGradient id="paint5_linear" x1="11" y1="0" x2="-1.82069"
+                                                    y2="10.8483" gradientUnits="userSpaceOnUse">
+                                                    <stop stop-color="#595faa"></stop>
+                                                    <stop offset="1" stop-color="#715a9c"></stop>
+                                                </linearGradient>
+                                                <linearGradient id="paint6_linear" x1="11" y1="0" x2="-1.82069"
+                                                    y2="10.8483" gradientUnits="userSpaceOnUse">
+                                                    <stop stop-color="#4062bb"></stop>
+                                                    <stop offset="1" stop-color="#595faa"></stop>
+                                                </linearGradient>
+                                            </defs>
+                                            <path
+                                                d="M9.39203 1.59575C7.27805 -0.537586 3.72476 -0.526238 1.61078 1.59575C-0.536928 3.76312 -0.536928 7.28085 1.61078 9.44823L4.87171 12.739C5.05162 12.9092 5.27651 13 5.50141 13C5.7263 13 5.96243 12.9092 6.1311 12.739L9.39203 9.44823C10.4265 8.39291 11 6.99716 11 5.52199C11 4.03546 10.4265 2.63972 9.39203 1.59575Z"
+                                                fill="url(#paint1_linear)"></path>
+                                        </svg></div><a class="Splash_text__CVjMX Splash_gradient-1__eo8YO"
+                                        href="/symptom-checker">Symptom Checker</a>
+                                </li>
+                                <li>
+                                    <div class="Splash_dot__0j5gp Splash_gradient-2__9mJGE"></div><a
+                                        class="Splash_text__CVjMX" href="/condition-search">Condition Search</a>
+                                </li>
+                                <li>
+                                    <div class="Splash_dot__0j5gp Splash_gradient-3__bUmTb"></div><a
+                                        class="Splash_text__CVjMX" href="/find-a-doctor">Find a Doctor</a>
+                                </li>
+                                <li>
+                                    <div class="Splash_dot__0j5gp Splash_gradient-4__4-ovL"></div><a
+                                        class="Splash_text__CVjMX" href="/second-opinion">Second Opinion</a>
+                                </li>
+                                <li>
+                                    <div class="Splash_dot__0j5gp Splash_gradient-5__vjus+"></div><a
+                                        class="Splash_text__CVjMX" href="/latest-research">Latest Advances</a>
+                                </li>
+                                <li>
+                                    <div class="Splash_dot__0j5gp Splash_gradient-6__jxwAx"></div><a
+                                        class="Splash_text__CVjMX" href="/clinical-trials">Clinical Trials</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="Splash_icon-section__j9Ctn col-lg-1 col-sm-12 col-12 order-lg-2 order-sm-1 order-1">
+                            <div
+                                style="background: linear-gradient(225deg, rgb(209, 70, 100) 0%, rgb(233, 65, 86) 100%); box-shadow: rgba(0, 0, 0, 0.07) 0px 50px 40px, rgba(0, 0, 0, 0.05) 0px 20.8888px 16.711px, rgba(0, 0, 0, 0.043) 0px 11.1682px 8.93452px, rgba(0, 0, 0, 0.035) 0px 6.26078px 5.00862px, rgba(0, 0, 0, 0.027) 0px 3.32505px 2.66004px, rgba(0, 0, 0, 0.02) 0px 1.38363px 1.1069px; border-radius: 26px; width: 104px; min-width: 104px; height: 104px; display: flex; align-items: center; justify-content: center;">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="68" height="84" viewBox="0 0 48 59"
+                                    fill="none">
+                                    <path
+                                        d="M12.957 44.7107C11.3103 46.1222 10.2909 48.161 10.2909 50.4351C10.2909 54.5911 13.6628 57.963 17.8188 57.963C21.9748 57.963 25.3467 54.5911 25.3467 50.4351C25.3467 48.161 24.3273 46.0438 22.6805 44.7107C22.6805 44.6323 22.6805 44.6323 22.6805 44.5539V17.6574C22.6805 14.9912 20.4849 12.874 17.8972 12.874C15.2311 12.874 13.1139 15.0697 13.1139 17.6574"
+                                        stroke="white" stroke-miterlimit="10" stroke-linecap="round"
+                                        stroke-linejoin="round"></path>
+                                    <path
+                                        d="M17.7393 53.18C19.2551 53.18 20.4838 51.9512 20.4838 50.4355C20.4838 48.9197 19.2551 47.6909 17.7393 47.6909C16.2235 47.6909 14.9948 48.9197 14.9948 50.4355C14.9948 51.9512 16.2235 53.18 17.7393 53.18Z"
+                                        fill="white"></path>
+                                    <path
+                                        d="M17.7407 50.0429C17.1918 50.0429 16.7213 49.5724 16.7213 49.0235V26.4398C16.7213 25.8909 17.1918 25.4204 17.7407 25.4204C18.2896 25.4204 18.7601 25.8909 18.7601 26.4398V49.0235C18.7601 49.5724 18.2896 50.0429 17.7407 50.0429Z"
+                                        fill="white"></path>
+                                    <path d="M10.2118 21.5005H14.211" stroke="white" stroke-miterlimit="10"
+                                        stroke-linecap="round" stroke-linejoin="round"></path>
+                                    <path d="M11.7793 25.4995H14.2102" stroke="white" stroke-miterlimit="10"
+                                        stroke-linecap="round" stroke-linejoin="round"></path>
+                                    <path d="M10.2118 29.4199H14.211" stroke="white" stroke-miterlimit="10"
+                                        stroke-linecap="round" stroke-linejoin="round"></path>
+                                    <path d="M11.7793 33.4194H14.2102" stroke="white" stroke-miterlimit="10"
+                                        stroke-linecap="round" stroke-linejoin="round"></path>
+                                    <path d="M10.2118 37.4185H14.211" stroke="white" stroke-miterlimit="10"
+                                        stroke-linecap="round" stroke-linejoin="round"></path>
+                                    <path d="M11.7793 41.418H14.2102" stroke="white" stroke-miterlimit="10"
+                                        stroke-linecap="round" stroke-linejoin="round"></path>
+                                    <path
+                                        d="M2.84007 31.5372C1.9775 29.1064 1.42859 26.5186 1.42859 23.7741C1.42859 11.306 11.5442 1.19043 24.0123 1.19043C36.4803 1.19043 46.5959 11.306 46.5959 23.7741C46.5959 34.4386 39.2249 43.378 29.2661 45.7305"
+                                        stroke="white" stroke-miterlimit="10" stroke-linecap="round"
+                                        stroke-linejoin="round"></path>
+                                    <path
+                                        d="M43.3212 25.4996H40.6361L37.4995 16.2466L32.7945 34.6742L29.6579 25.4996H26.2076"
+                                        stroke="white" stroke-miterlimit="10" stroke-linecap="round"
+                                        stroke-linejoin="round"></path>
+                                </svg></div>
+                        </div>
+                        <div class="Splash_title-section__9Eg7U col-lg col-sm-12 col-12 order-lg-3 order-sm-2 order-2">
+                            <h1 class="Splash_title__5EOR1 Splash_gradient-1__eo8YO">Symptom Checker</h1>
+                            <div class="">
+                                <div class="Splash_subtitle__Zwxjl">Get to the root of the cause</div>
+                                <div class="Splash_description__fPso3">When medical symptoms appear, we help you
+                                    understand what might be the cause. Just share a few details about your symptoms and
+                                    some basic health info, and we’ll show you a list of the most likely diagnoses.
+                                </div>
+                            </div><button data-nosnippet="true"
+                                class="Button_button__N67Gb Button_normal__4rQXo Button_transparent__mdXzp Button_underline__0iBQQ Button_round__DTgHq"
+                                type="button"><span
+                                    class="Button_focus-container__IZDE4 SymptomCheckerShared_get-started-button__ZnUrY Button_normal__4rQXo Button_transparent__mdXzp Button_underline__0iBQQ Button_padding__44w-w Button_round__DTgHq"
+                                    tabindex="-1"><span class="Button_label__4FHaL Button_normal__4rQXo">Get
+                                        Started</span><span class="Button_divider__uccnZ"></span><span
+                                        class="Button_icon__e++wT"><svg width="14" height="10" viewBox="0 0 14 10"
+                                            fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M1.01117 5.03259L11.6778 5.00292" stroke="#fff" stroke-width="1.5"
+                                                stroke-linecap="round" stroke-linejoin="round"></path>
+                                            <path d="M8.73352 1.01099L12.7446 4.99984L8.75578 9.01096" stroke="#fff"
+                                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                            </path>
+                                        </svg></span></span><span class="sr-only"></span></button>
+                            <div class="Splash_subtitle-description-bottom__bPovi Splash_hide__cGzd2">
+                                <div class="Splash_subtitle__Zwxjl">Get to the root of the cause</div>
+                                <div class="Splash_description__fPso3">When medical symptoms appear, we help you
+                                    understand what might be the cause. Just share a few details about your symptoms and
+                                    some basic health info, and we’ll show you a list of the most likely diagnoses.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12"><button class="Splash_learn-more__7qfFZ Splash_other__xA5vp"
+                                type="button">Learn More
+                                About MediFind<img
+                                    src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGZpbGw9Im5vbmUiIHZpZXdCb3g9IjAgMCA2MCAyNCI+PHBhdGggc3Ryb2tlPSIjM2EzZjU4IiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIHN0cm9rZS13aWR0aD0iMS41IiBkPSJNMTUgOWwxNSA2IDE1LTYiIG9wYWNpdHk9Ii41Ii8+PC9zdmc+"
+                                    alt="Learn More"></button></div>
+                    </div>
+                </div>
+                <div class="Splash_splash__64B01">
+                    <div class="container">
+                        <div id="blurb" class="Splash_blurb__uylbe row">
+                            <div class="col">
+                                <h2 class="Splash_blurb-title__Qi4d9">Using the MediFind Symptom Checker</h2>
+                                <div class="Splash_blurb-body__btpIy">Our symptom checker takes just a few minutes to
+                                    complete and it is completely anonymous. You will be asked to enter all of your
+                                    symptoms and some basic health information. If you have results from any medical
+                                    tests those are helpful too. We also need to know your age, sex and country of
+                                    residency. In order to get the best results it is important that you carefully
+                                    consider all of your symptoms and health conditions. Your information will be
+                                    carefully analyzed in order to provide a comprehensive list of causes for your
+                                    symptoms.</div>
+                            </div>
+                        </div>
+                        <div class="Splash_faq__KotzF row">
+                            <div class="Splash_faq-question__Cw+pu col">
+                                <h2>What is a symptom checker?</h2>
+                            </div>
+                            <div class="Splash_faq-answer__-Dmhw col"></div>
+                            <div class="Splash_faq-button__7O983"><button data-nosnippet="true"
+                                    class="Button_button__N67Gb Button_normal__4rQXo Button_transparent__mdXzp Button_outline__0pgla Button_round__DTgHq"
+                                    type="button"><span
+                                        class="Button_focus-container__IZDE4 Button_normal__4rQXo Button_transparent__mdXzp Button_outline__0pgla Button_round__DTgHq"
+                                        tabindex="-1"><span class=""><svg width="30" height="30" viewBox="0 0 15 14"
+                                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M7.48529 13C10.799 13 13.4853 10.3137 13.4853 7C13.4853 3.68629 10.799 1 7.48529 1C4.17158 1 1.48529 3.68629 1.48529 7C1.48529 10.3137 4.17158 13 7.48529 13Z"
+                                                    stroke="#4062BB" stroke-width="1.0" stroke-linecap="round"
+                                                    stroke-linejoin="round"></path>
+                                                <path d="M9.28506 5.19983L5.68506 8.79983" stroke="#4062BB"
+                                                    stroke-width="1.0" stroke-linecap="round" stroke-linejoin="round">
+                                                </path>
+                                                <path d="M5.68506 5.19983L9.28506 8.79983" stroke="#4062BB"
+                                                    stroke-width="1.0" stroke-linecap="round" stroke-linejoin="round">
+                                                </path>
+                                            </svg></span></span><span class="sr-only"></span></button></div>
+                        </div>
+                        <div class="Splash_faq__KotzF row">
+                            <div class="Splash_faq-question__Cw+pu col">
+                                <h2>How does the symptom checker work?</h2>
+                            </div>
+                            <div class="Splash_faq-answer__-Dmhw col"></div>
+                            <div class="Splash_faq-button__7O983"><button data-nosnippet="true"
+                                    class="Button_button__N67Gb Button_normal__4rQXo Button_transparent__mdXzp Button_outline__0pgla Button_round__DTgHq"
+                                    type="button"><span
+                                        class="Button_focus-container__IZDE4 Button_normal__4rQXo Button_transparent__mdXzp Button_outline__0pgla Button_round__DTgHq"
+                                        tabindex="-1"><span class=""><svg width="30" height="30" viewBox="0 0 15 14"
+                                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M7.48529 13C10.799 13 13.4853 10.3137 13.4853 7C13.4853 3.68629 10.799 1 7.48529 1C4.17158 1 1.48529 3.68629 1.48529 7C1.48529 10.3137 4.17158 13 7.48529 13Z"
+                                                    stroke="#4062BB" stroke-width="1.0" stroke-linecap="round"
+                                                    stroke-linejoin="round"></path>
+                                                <path d="M9.28506 5.19983L5.68506 8.79983" stroke="#4062BB"
+                                                    stroke-width="1.0" stroke-linecap="round" stroke-linejoin="round">
+                                                </path>
+                                                <path d="M5.68506 5.19983L9.28506 8.79983" stroke="#4062BB"
+                                                    stroke-width="1.0" stroke-linecap="round" stroke-linejoin="round">
+                                                </path>
+                                            </svg></span></span><span class="sr-only"></span></button></div>
+                        </div>
+                        <div class="Splash_faq__KotzF row">
+                            <div class="Splash_faq-question__Cw+pu col">
+                                <h2>Should I trust the results from a symptom checker?</h2>
+                            </div>
+                            <div class="Splash_faq-answer__-Dmhw col"></div>
+                            <div class="Splash_faq-button__7O983"><button data-nosnippet="true"
+                                    class="Button_button__N67Gb Button_normal__4rQXo Button_transparent__mdXzp Button_outline__0pgla Button_round__DTgHq"
+                                    type="button"><span
+                                        class="Button_focus-container__IZDE4 Button_normal__4rQXo Button_transparent__mdXzp Button_outline__0pgla Button_round__DTgHq"
+                                        tabindex="-1"><span class=""><svg width="30" height="30" viewBox="0 0 15 14"
+                                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M7.48529 13C10.799 13 13.4853 10.3137 13.4853 7C13.4853 3.68629 10.799 1 7.48529 1C4.17158 1 1.48529 3.68629 1.48529 7C1.48529 10.3137 4.17158 13 7.48529 13Z"
+                                                    stroke="#4062BB" stroke-width="1.0" stroke-linecap="round"
+                                                    stroke-linejoin="round"></path>
+                                                <path d="M9.28506 5.19983L5.68506 8.79983" stroke="#4062BB"
+                                                    stroke-width="1.0" stroke-linecap="round" stroke-linejoin="round">
+                                                </path>
+                                                <path d="M5.68506 5.19983L9.28506 8.79983" stroke="#4062BB"
+                                                    stroke-width="1.0" stroke-linecap="round" stroke-linejoin="round">
+                                                </path>
+                                            </svg></span></span><span class="sr-only"></span></button></div>
+                        </div>
+                        <div class="Splash_faq__KotzF row">
+                            <div class="Splash_faq-question__Cw+pu col">
+                                <h2>Do I still need to see a doctor after using a symptom checker?</h2>
+                            </div>
+                            <div class="Splash_faq-answer__-Dmhw col"></div>
+                            <div class="Splash_faq-button__7O983"><button data-nosnippet="true"
+                                    class="Button_button__N67Gb Button_normal__4rQXo Button_transparent__mdXzp Button_outline__0pgla Button_round__DTgHq"
+                                    type="button"><span
+                                        class="Button_focus-container__IZDE4 Button_normal__4rQXo Button_transparent__mdXzp Button_outline__0pgla Button_round__DTgHq"
+                                        tabindex="-1"><span class=""><svg width="30" height="30" viewBox="0 0 15 14"
+                                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M7.48529 13C10.799 13 13.4853 10.3137 13.4853 7C13.4853 3.68629 10.799 1 7.48529 1C4.17158 1 1.48529 3.68629 1.48529 7C1.48529 10.3137 4.17158 13 7.48529 13Z"
+                                                    stroke="#4062BB" stroke-width="1.0" stroke-linecap="round"
+                                                    stroke-linejoin="round"></path>
+                                                <path d="M9.28506 5.19983L5.68506 8.79983" stroke="#4062BB"
+                                                    stroke-width="1.0" stroke-linecap="round" stroke-linejoin="round">
+                                                </path>
+                                                <path d="M5.68506 5.19983L9.28506 8.79983" stroke="#4062BB"
+                                                    stroke-width="1.0" stroke-linecap="round" stroke-linejoin="round">
+                                                </path>
+                                            </svg></span></span><span class="sr-only"></span></button></div>
+                        </div>
+                        <div class="Splash_faq__KotzF row">
+                            <div class="Splash_faq-question__Cw+pu col">
+                                <h2>Why does the symptom checker display numerous conditions in the results?</h2>
+                            </div>
+                            <div class="Splash_faq-answer__-Dmhw col"></div>
+                            <div class="Splash_faq-button__7O983"><button data-nosnippet="true"
+                                    class="Button_button__N67Gb Button_normal__4rQXo Button_transparent__mdXzp Button_outline__0pgla Button_round__DTgHq"
+                                    type="button"><span
+                                        class="Button_focus-container__IZDE4 Button_normal__4rQXo Button_transparent__mdXzp Button_outline__0pgla Button_round__DTgHq"
+                                        tabindex="-1"><span class=""><svg width="30" height="30" viewBox="0 0 15 14"
+                                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M7.48529 13C10.799 13 13.4853 10.3137 13.4853 7C13.4853 3.68629 10.799 1 7.48529 1C4.17158 1 1.48529 3.68629 1.48529 7C1.48529 10.3137 4.17158 13 7.48529 13Z"
+                                                    stroke="#4062BB" stroke-width="1.0" stroke-linecap="round"
+                                                    stroke-linejoin="round"></path>
+                                                <path d="M9.28506 5.19983L5.68506 8.79983" stroke="#4062BB"
+                                                    stroke-width="1.0" stroke-linecap="round" stroke-linejoin="round">
+                                                </path>
+                                                <path d="M5.68506 5.19983L9.28506 8.79983" stroke="#4062BB"
+                                                    stroke-width="1.0" stroke-linecap="round" stroke-linejoin="round">
+                                                </path>
+                                            </svg></span></span><span class="sr-only"></span></button></div>
+                        </div>
+                        <div class="Splash_faq__KotzF row">
+                            <div class="Splash_faq-question__Cw+pu col">
+                                <h2>Is the first condition in the list the most likely one?</h2>
+                            </div>
+                            <div class="Splash_faq-answer__-Dmhw col"></div>
+                            <div class="Splash_faq-button__7O983"><button data-nosnippet="true"
+                                    class="Button_button__N67Gb Button_normal__4rQXo Button_transparent__mdXzp Button_outline__0pgla Button_round__DTgHq"
+                                    type="button"><span
+                                        class="Button_focus-container__IZDE4 Button_normal__4rQXo Button_transparent__mdXzp Button_outline__0pgla Button_round__DTgHq"
+                                        tabindex="-1"><span class=""><svg width="30" height="30" viewBox="0 0 15 14"
+                                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M7.48529 13C10.799 13 13.4853 10.3137 13.4853 7C13.4853 3.68629 10.799 1 7.48529 1C4.17158 1 1.48529 3.68629 1.48529 7C1.48529 10.3137 4.17158 13 7.48529 13Z"
+                                                    stroke="#4062BB" stroke-width="1.0" stroke-linecap="round"
+                                                    stroke-linejoin="round"></path>
+                                                <path d="M9.28506 5.19983L5.68506 8.79983" stroke="#4062BB"
+                                                    stroke-width="1.0" stroke-linecap="round" stroke-linejoin="round">
+                                                </path>
+                                                <path d="M5.68506 5.19983L9.28506 8.79983" stroke="#4062BB"
+                                                    stroke-width="1.0" stroke-linecap="round" stroke-linejoin="round">
+                                                </path>
+                                            </svg></span></span><span class="sr-only"></span></button></div>
+                        </div>
+                        <div class="Splash_faq__KotzF row">
+                            <div class="Splash_faq-question__Cw+pu col">
+                                <h2>What are Red Flag Conditions?</h2>
+                            </div>
+                            <div class="Splash_faq-answer__-Dmhw col"></div>
+                            <div class="Splash_faq-button__7O983"><button data-nosnippet="true"
+                                    class="Button_button__N67Gb Button_normal__4rQXo Button_transparent__mdXzp Button_outline__0pgla Button_round__DTgHq"
+                                    type="button"><span
+                                        class="Button_focus-container__IZDE4 Button_normal__4rQXo Button_transparent__mdXzp Button_outline__0pgla Button_round__DTgHq"
+                                        tabindex="-1"><span class=""><svg width="30" height="30" viewBox="0 0 15 14"
+                                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M7.48529 13C10.799 13 13.4853 10.3137 13.4853 7C13.4853 3.68629 10.799 1 7.48529 1C4.17158 1 1.48529 3.68629 1.48529 7C1.48529 10.3137 4.17158 13 7.48529 13Z"
+                                                    stroke="#4062BB" stroke-width="1.0" stroke-linecap="round"
+                                                    stroke-linejoin="round"></path>
+                                                <path d="M9.28506 5.19983L5.68506 8.79983" stroke="#4062BB"
+                                                    stroke-width="1.0" stroke-linecap="round" stroke-linejoin="round">
+                                                </path>
+                                                <path d="M5.68506 5.19983L9.28506 8.79983" stroke="#4062BB"
+                                                    stroke-width="1.0" stroke-linecap="round" stroke-linejoin="round">
+                                                </path>
+                                            </svg></span></span><span class="sr-only"></span></button></div>
+                        </div>
+                        <div class="Splash_contact-us__jXRN7 row">
+                            <div class="col">
+                                <div class="Splash_contact-us-title__6+Xk7">Still have questions?</div><a tabindex="-1"
+                                    href="/contact"><button data-nosnippet="true"
+                                        class="Button_button__N67Gb Button_normal__4rQXo Button_blue__gTCTO Button_underline__0iBQQ Button_round__DTgHq"
+                                        type="button"><span
+                                            class="Button_focus-container__IZDE4 Button_normal__4rQXo Button_blue__gTCTO Button_underline__0iBQQ Button_padding__44w-w Button_round__DTgHq"
+                                            tabindex="-1"><span class="Button_label__4FHaL Button_normal__4rQXo">Contact
+                                                Us</span><span class="Button_divider__uccnZ"></span><span
+                                                class="Button_icon__e++wT"><svg width="14" height="10"
+                                                    viewBox="0 0 14 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1.01117 5.03259L11.6778 5.00292" stroke="#fff"
+                                                        stroke-width="1.5" stroke-linecap="round"
+                                                        stroke-linejoin="round"></path>
+                                                    <path d="M8.73352 1.01099L12.7446 4.99984L8.75578 9.01096"
+                                                        stroke="#fff" stroke-width="1.5" stroke-linecap="round"
+                                                        stroke-linejoin="round"></path>
+                                                </svg></span></span><span class="sr-only"></span></button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="MFLazyLoad_fallback__rEd6d" style="height: 700px;"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

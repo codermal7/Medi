@@ -1,0 +1,121 @@
+:not(#\9):not(#\9):not(#\9):not(#\9):not(#\9):not(#\9) .Popover_popover-tooltip__MfBOI {
+    display: flex;
+    position: absolute;
+    background: #242a45;
+    border-radius: 8px;
+    padding: .25rem 1.5rem;
+    box-shadow: 0 9px 20px rgba(0, 0, 0, .15), 0 2px 9px rgba(0, 0, 0, .1);
+    text-align: center;
+    transition: opacity .25s cubic-bezier(0.75, 0, 0.25, 1);
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1050;
+    width: 100%;
+    margin-left: 50%
+}
+
+:not(#\9):not(#\9):not(#\9):not(#\9):not(#\9):not(#\9) .Popover_popover-tooltip--top__a\+KMN {
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    bottom: 100%;
+    margin-bottom: 8px;
+    left: 0
+}
+
+:not(#\9):not(#\9):not(#\9):not(#\9):not(#\9):not(#\9) .Popover_popover-tooltip--top__a\+KMN::after {
+    content: "";
+    width: 0;
+    height: 0;
+    border: 0 solid rgba(0, 0, 0, 0);
+    border-right-width: 14px;
+    border-left-width: 14px;
+    border-top: 8px solid #242a45;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    -webkit-transform: translateY(100%) translateX(-50%);
+    transform: translateY(100%) translateX(-50%)
+}
+
+:not(#\9):not(#\9):not(#\9):not(#\9):not(#\9):not(#\9) .Popover_popover-tooltip--bottom__d2Dsg {
+    -webkit-transform: translateX(50%);
+    transform: translateX(50%)
+}
+
+:not(#\9):not(#\9):not(#\9):not(#\9):not(#\9):not(#\9) .Popover_popover-tooltip--bottom__d2Dsg::after {
+    content: "";
+    width: 0;
+    height: 0;
+    border: 0 solid rgba(0, 0, 0, 0);
+    border-right-width: 14px;
+    border-left-width: 14px;
+    border-bottom: 8px solid #242a45;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    -webkit-transform: translateY(-100%) translateX(-50%);
+    transform: translateY(-100%) translateX(-50%)
+}
+
+:not(#\9):not(#\9):not(#\9):not(#\9):not(#\9):not(#\9) .Popover_popover-tooltip--left__L9-WX {
+    -webkit-transform: translateY(50%);
+    transform: translateY(50%);
+    margin-left: 8px;
+    left: 100%;
+    bottom: 50%
+}
+
+:not(#\9):not(#\9):not(#\9):not(#\9):not(#\9):not(#\9) .Popover_popover-tooltip--left__L9-WX::after {
+    content: "";
+    width: 0;
+    height: 0;
+    border: 0 solid rgba(0, 0, 0, 0);
+    border-top-width: 14px;
+    border-bottom-width: 14px;
+    border-right: 8px solid #242a45;
+    position: absolute;
+    left: 0;
+    bottom: 50%;
+    -webkit-transform: translateY(50%) translateX(-100%);
+    transform: translateY(50%) translateX(-100%)
+}
+
+:not(#\9):not(#\9):not(#\9):not(#\9):not(#\9):not(#\9) .Popover_popover-tooltip--right__axAu4 {
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    margin-right: 8px;
+    right: 100%;
+    top: 50%
+}
+
+:not(#\9):not(#\9):not(#\9):not(#\9):not(#\9):not(#\9) .Popover_popover-tooltip--right__axAu4::after {
+    content: "";
+    width: 0;
+    height: 0;
+    border: 0 solid rgba(0, 0, 0, 0);
+    border-top-width: 14px;
+    border-bottom-width: 14px;
+    border-left: 8px solid #242a45;
+    position: absolute;
+    right: 0;
+    bottom: 50%;
+    -webkit-transform: translateY(50%) translateX(100%);
+    transform: translateY(50%) translateX(100%)
+}
+
+:not(#\9):not(#\9):not(#\9):not(#\9):not(#\9):not(#\9) .Popover_popover-tooltip--active__oM-8w {
+    opacity: 1;
+    visibility: inherit
+}
+
+:not(#\9):not(#\9):not(#\9):not(#\9):not(#\9):not(#\9) .Popover_text__Y4o9\+ {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #ebedff
+}
+
+:not(#\9):not(#\9):not(#\9):not(#\9):not(#\9):not(#\9) .Popover_close__9wlq4 {
+    margin-right: -1rem
+}
+
+/*# sourceMappingURL=2625.51c5f924.chunk.css.map*/
